@@ -1,0 +1,8 @@
+CREATE TABLE t_promotions (
+    id BIGINT NOT NULL PRIMARY KEY,
+    code VARCHAR(255) NOT NULL,
+    discount_percentage DECIMAL(5, 2) NOT NULL DEFAULT 0
+);
+
+CREATE SEQUENCE t_promotions_seq START WITH 1 INCREMENT BY 50;
+

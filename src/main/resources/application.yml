@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: feature-flagged-persistence-example
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
