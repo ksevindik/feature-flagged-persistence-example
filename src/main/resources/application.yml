@@ -14,4 +14,4 @@ spring:
       path: /h2-console
 feature:
   promotions:
-    enabled: true
+    enabled: false
