@@ -15,5 +15,5 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories
 @EntityScan(basePackages = ["feature.promotions"], basePackageClasses = [FeatureFlaggedPersistenceExampleApplication::class])
 @EnableJpaRepositories(basePackages = ["feature.promotions"], basePackageClasses = [FeatureFlaggedPersistenceExampleApplication::class])
 @ComponentScan(basePackages = ["feature.promotions"])
-class JpaConfigForFeaturePromotions {
+class ConfigForFeaturePromotions {
 }
