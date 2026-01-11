@@ -1,7 +1,7 @@
-package com.example.feature_flagged_persistence.service
+package com.example.ffp.service
 
-import com.example.feature_flagged_persistence.model.Order
-import com.example.feature_flagged_persistence.repository.OrderRepository
+import com.example.ffp.model.Order
+import com.example.ffp.repository.OrderRepository
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
 

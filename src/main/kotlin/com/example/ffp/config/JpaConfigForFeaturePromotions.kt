@@ -1,6 +1,6 @@
-package com.example.feature_flagged_persistence.config
+package com.example.ffp.config
 
-import com.example.feature_flagged_persistence.FeatureFlaggedPersistenceExampleApplication
+import com.example.ffp.FeatureFlaggedPersistenceExampleApplication
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty
 import org.springframework.boot.persistence.autoconfigure.EntityScan
 import org.springframework.context.annotation.ComponentScan
@@ -15,5 +15,5 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories
 @EntityScan(basePackages = ["feature.promotions"], basePackageClasses = [FeatureFlaggedPersistenceExampleApplication::class])
 @EnableJpaRepositories(basePackages = ["feature.promotions"], basePackageClasses = [FeatureFlaggedPersistenceExampleApplication::class])
 @ComponentScan(basePackages = ["feature.promotions"])
-class FeaturePromotionsJpaConfig {
+class JpaConfigForFeaturePromotions {
 }

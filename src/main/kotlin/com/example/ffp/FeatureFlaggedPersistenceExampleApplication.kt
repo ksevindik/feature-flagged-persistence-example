@@ -1,4 +1,4 @@
-package com.example.feature_flagged_persistence
+package com.example.ffp
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

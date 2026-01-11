@@ -1,10 +1,9 @@
-package com.example.feature_flagged_persistence
+package com.example.ffp
 
 import com.zaxxer.hikari.pool.HikariProxyConnection
 import jakarta.persistence.EntityManager
 import org.h2.jdbc.JdbcConnection
 import org.h2.tools.Server
-import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.jdbc.datasource.DataSourceUtils

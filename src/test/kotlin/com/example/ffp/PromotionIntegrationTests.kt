@@ -1,7 +1,7 @@
-package com.example.feature_flagged_persistence
+package com.example.ffp
 
-import feature.promotions.model.Promotion
-import feature.promotions.service.PromotionService
+import feature.promotions.com.example.ffp.model.Promotion
+import feature.promotions.com.example.ffp.service.PromotionService
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired
@@ -19,14 +19,14 @@ class PromotionIntegrationTests : BaseIntegrationTests() {
         promotion.code = "ABC"
         promotion.discountPercentage = BigDecimal.TEN
 
-        var promotionFound = promotionService.getPromotion("ABC")
+        var promotionFound = promotionService.getPromotionByCode("ABC")
         Assertions.assertNull(promotionFound)
 
         promotionService.create(promotion)
 
         flushAndClear()
 
-        promotionFound = promotionService.getPromotion("ABC")
+        promotionFound = promotionService.getPromotionByCode("ABC")
         Assertions.assertNotNull(promotionFound)
     }
 }

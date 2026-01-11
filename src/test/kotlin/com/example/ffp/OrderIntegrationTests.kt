@@ -1,7 +1,7 @@
-package com.example.feature_flagged_persistence
+package com.example.ffp
 
-import com.example.feature_flagged_persistence.model.Order
-import com.example.feature_flagged_persistence.service.OrderService
+import com.example.ffp.model.Order
+import com.example.ffp.service.OrderService
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired
